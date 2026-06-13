@@ -97,11 +97,12 @@ if not results:
 else:
     working = [r for r in results if r.reachable]
     total_channels = sum(r.channels for r in working)
+    russian_count = sum(1 for r in results if r.is_russian)
 
     m1, m2, m3, m4 = st.columns(4)
     m1.metric("Рабочих листов", f"{len(working)} / {len(results)}")
-    m2.metric("Всего каналов", f"{total_channels:,}".replace(",", " "))
-    m3.metric("Лучший рейтинг", f"{results[0].score:.0f}" if results else "—")
+    m2.metric("Русскоязычных", russian_count)
+    m3.metric("Всего каналов", f"{total_channels:,}".replace(",", " "))
     m4.metric("Обновлено", st.session_state.scanned_at or "—")
 
     if not do_probe or all(r.availability is None for r in results):
@@ -112,37 +113,47 @@ else:
                    "Зависит от расположения сервера: из-за гео-блокировок часть "
                    "потоков может не отвечать, хотя у вас локально они работают.")
 
-    st.subheader("🏆 Рейтинг рабочих IPTV-листов")
-    df = pd.DataFrame([r.as_row() for r in results])
-    df.index = range(1, len(df) + 1)
-    st.dataframe(
-        df,
-        use_container_width=True,
-        column_config={
-            "Плейлист": st.column_config.LinkColumn("Плейлист", display_text="открыть m3u"),
-            "EPG (телепрограмма)": st.column_config.LinkColumn("EPG", display_text="программа"),
-            "Рейтинг": st.column_config.ProgressColumn("Рейтинг", min_value=0, max_value=100, format="%.0f"),
-            "Каналов": st.column_config.NumberColumn("Каналов", format="%d"),
-        },
-        height=min(560, 80 + 38 * len(df)),
-    )
+    COLS = {
+        "Плейлист": st.column_config.LinkColumn("Плейлист", display_text="открыть m3u"),
+        "EPG (телепрограмма)": st.column_config.LinkColumn("EPG", display_text="программа"),
+        "Рейтинг": st.column_config.ProgressColumn("Рейтинг", min_value=0, max_value=100, format="%.0f"),
+        "Каналов": st.column_config.NumberColumn("Каналов", format="%d"),
+    }
 
-    # быстрый доступ к топ-листу
-    if working:
-        top = working[0]
-        st.success(f"**Рекомендуемый лист:** {top.name} — {top.channels} каналов · "
-                   f"рейтинг {top.score:.0f}")
-        st.code(top.url, language=None)
-        if top.epg and top.epg != "—":
-            st.markdown(f"EPG для него: {top.epg}")
+    def render_table(rows: list, key: str):
+        df = pd.DataFrame([r.as_row() for r in rows])
+        df.index = range(1, len(df) + 1)
+        st.dataframe(df, use_container_width=True, column_config=COLS,
+                     height=min(560, 80 + 38 * len(df)), key=key)
+        st.download_button(
+            "💾 Скачать как CSV",
+            data=df.to_csv(index_label="#").encode("utf-8-sig"),
+            file_name=f"{key}.csv", mime="text/csv", key=f"dl_{key}",
+        )
 
-    # выгрузка результата
-    st.download_button(
-        "💾 Скачать рейтинг (CSV)",
-        data=df.to_csv(index_label="#").encode("utf-8-sig"),
-        file_name="iptv_ranking.csv",
-        mime="text/csv",
-    )
+    # --- ГЛАВНАЯ ТАБЛИЦА: только русскоязычные листы ---
+    russian = [r for r in results if r.is_russian]
+    russian_ok = [r for r in russian if r.reachable]
+
+    st.subheader("🇷🇺 Топ русскоязычных IPTV-листов")
+    if russian:
+        st.caption(f"Отобрано {len(russian)} русскоязычных листов из {len(results)} "
+                   "проверенных (по флагу источника и доле кириллицы в названиях каналов).")
+        render_table(russian, "russian_ranking")
+        if russian_ok:
+            top = russian_ok[0]
+            st.success(f"**Рекомендуемый русскоязычный лист:** {top.name} — "
+                       f"{top.channels} каналов · рейтинг {top.score:.0f}")
+            st.code(top.url, language=None)
+            if top.epg and top.epg != "—":
+                st.markdown(f"EPG для него: {top.epg}")
+    else:
+        st.warning("Среди проверенных листов русскоязычных не найдено. "
+                   "Попробуйте обновить базу позже или добавьте свои ссылки.")
+
+    # --- ПОЛНЫЙ РЕЙТИНГ (все регионы) ---
+    with st.expander(f"🌍 Полный рейтинг всех листов ({len(results)})"):
+        render_table(results, "full_ranking")
 
 with st.expander("ℹ️ Как это работает и важные оговорки"):
     st.markdown(
