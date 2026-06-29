@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-06-28 08:52:37 UTC",
+  "generated_at": "2026-06-29 11:01:10 UTC",
   "count": 25,
   "russian_count": 9,
   "results": [
     {
-      "name": "iptv-org · Категория: Кино",
-      "url": "https://iptv-org.github.io/iptv/categories/movies.m3u",
+      "name": "iptv-org · Все каналы (мир)",
+      "url": "https://iptv-org.github.io/iptv/index.m3u",
       "region": "Мир",
-      "note": "",
+      "note": "~12 000 каналов",
       "status": "ОК",
       "reachable": true,
-      "channels": 662,
-      "epg": "https://iptvx.one/epg/epg.xml.gz",
+      "channels": 12983,
+      "epg": "https://worker-9dd4.onrender.com/guide.xml.gz",
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 88,
-      "ru_ratio": 0.03927492447129909,
+      "latency_ms": 161,
+      "ru_ratio": 0.019949164291766155,
       "is_russian": false,
       "score": 87.0
     },
@@ -32,8 +32,25 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 43,
+      "latency_ms": 24,
       "ru_ratio": 0.0014204545454545455,
+      "is_russian": false,
+      "score": 87.0
+    },
+    {
+      "name": "iptv-org · Категория: Кино",
+      "url": "https://iptv-org.github.io/iptv/categories/movies.m3u",
+      "region": "Мир",
+      "note": "",
+      "status": "ОК",
+      "reachable": true,
+      "channels": 662,
+      "epg": "https://iptvx.one/epg/epg.xml.gz",
+      "sampled": 0,
+      "working_streams": 0,
+      "availability": null,
+      "latency_ms": 120,
+      "ru_ratio": 0.03927492447129909,
       "is_russian": false,
       "score": 87.0
     },
@@ -49,7 +66,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 93,
+      "latency_ms": 156,
       "ru_ratio": 0.022911051212938006,
       "is_russian": false,
       "score": 87.0
@@ -66,25 +83,8 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 116,
+      "latency_ms": 218,
       "ru_ratio": 0.025252525252525252,
-      "is_russian": false,
-      "score": 87.0
-    },
-    {
-      "name": "iptv-org · Все каналы (мир)",
-      "url": "https://iptv-org.github.io/iptv/index.m3u",
-      "region": "Мир",
-      "note": "~12 000 каналов",
-      "status": "ОК",
-      "reachable": true,
-      "channels": 12983,
-      "epg": "https://worker-9dd4.onrender.com/guide.xml.gz",
-      "sampled": 0,
-      "working_streams": 0,
-      "availability": null,
-      "latency_ms": 526,
-      "ru_ratio": 0.019949164291766155,
       "is_russian": false,
       "score": 87.0
     },
@@ -100,7 +100,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 158,
+      "latency_ms": 131,
       "ru_ratio": 0.0,
       "is_russian": false,
       "score": 87.0
@@ -117,7 +117,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 79,
+      "latency_ms": 132,
       "ru_ratio": 0.052770448548812667,
       "is_russian": false,
       "score": 87.0
@@ -134,7 +134,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 117,
+      "latency_ms": 193,
       "ru_ratio": 0.437137330754352,
       "is_russian": true,
       "score": 86.9
@@ -151,7 +151,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 74,
+      "latency_ms": 36,
       "ru_ratio": 0.0273972602739726,
       "is_russian": false,
       "score": 86.1
@@ -168,7 +168,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 225,
+      "latency_ms": 216,
       "ru_ratio": 0.4813895781637717,
       "is_russian": true,
       "score": 85.7
@@ -185,7 +185,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 222,
+      "latency_ms": 181,
       "ru_ratio": 0.26737967914438504,
       "is_russian": true,
       "score": 85.3
@@ -202,7 +202,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 23,
+      "latency_ms": 126,
       "ru_ratio": 0.025210084033613446,
       "is_russian": false,
       "score": 85.1
@@ -219,10 +219,27 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 61,
+      "latency_ms": 106,
       "ru_ratio": 0.0,
       "is_russian": false,
       "score": 84.3
+    },
+    {
+      "name": "iptv-org src · Испания (raw)",
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/es.m3u",
+      "region": "ES",
+      "note": "Зеркало исходника",
+      "status": "ОК",
+      "reachable": true,
+      "channels": 298,
+      "epg": "https://iptvx.one/epg/epg.xml.gz",
+      "sampled": 0,
+      "working_streams": 0,
+      "availability": null,
+      "latency_ms": 200,
+      "ru_ratio": 0.0,
+      "is_russian": false,
+      "score": 84.2
     },
     {
       "name": "iptv-org src · Италия (raw)",
@@ -236,24 +253,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 159,
-      "ru_ratio": 0.0,
-      "is_russian": false,
-      "score": 84.2
-    },
-    {
-      "name": "iptv-org src · Испания (raw)",
-      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/es.m3u",
-      "region": "ES",
-      "note": "Зеркало исходника",
-      "status": "ОК",
-      "reachable": true,
-      "channels": 299,
-      "epg": "https://iptvx.one/epg/epg.xml.gz",
-      "sampled": 0,
-      "working_streams": 0,
-      "availability": null,
-      "latency_ms": 79,
+      "latency_ms": 214,
       "ru_ratio": 0.0,
       "is_russian": false,
       "score": 84.2
@@ -270,7 +270,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 56,
+      "latency_ms": 3,
       "ru_ratio": 0.0,
       "is_russian": false,
       "score": 84.0
@@ -287,7 +287,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 58,
+      "latency_ms": 268,
       "ru_ratio": 0.0,
       "is_russian": false,
       "score": 82.9
@@ -304,7 +304,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 171,
+      "latency_ms": 191,
       "ru_ratio": 0.16766467065868262,
       "is_russian": false,
       "score": 81.5
@@ -321,7 +321,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 78,
+      "latency_ms": 104,
       "ru_ratio": 0.21232876712328766,
       "is_russian": false,
       "score": 80.8
@@ -338,7 +338,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 160,
+      "latency_ms": 172,
       "ru_ratio": 0.12903225806451613,
       "is_russian": true,
       "score": 73.6
@@ -355,7 +355,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 186,
+      "latency_ms": 200,
       "ru_ratio": 0.10714285714285714,
       "is_russian": true,
       "score": 73.1
@@ -372,7 +372,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 189,
+      "latency_ms": 191,
       "ru_ratio": 0.0,
       "is_russian": true,
       "score": 72.4
@@ -389,7 +389,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 159,
+      "latency_ms": 164,
       "ru_ratio": 0.75,
       "is_russian": true,
       "score": 72.4
@@ -406,7 +406,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 178,
+      "latency_ms": 206,
       "ru_ratio": 0.6,
       "is_russian": true,
       "score": 71.5
@@ -423,7 +423,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 202,
+      "latency_ms": 207,
       "ru_ratio": 0.375,
       "is_russian": true,
       "score": 67.5
@@ -442,7 +442,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 117,
+      "latency_ms": 193,
       "ru_ratio": 0.437137330754352,
       "is_russian": true,
       "score": 86.9
@@ -459,7 +459,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 225,
+      "latency_ms": 216,
       "ru_ratio": 0.4813895781637717,
       "is_russian": true,
       "score": 85.7
@@ -476,7 +476,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 222,
+      "latency_ms": 181,
       "ru_ratio": 0.26737967914438504,
       "is_russian": true,
       "score": 85.3
@@ -493,7 +493,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 160,
+      "latency_ms": 172,
       "ru_ratio": 0.12903225806451613,
       "is_russian": true,
       "score": 73.6
@@ -510,7 +510,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 186,
+      "latency_ms": 200,
       "ru_ratio": 0.10714285714285714,
       "is_russian": true,
       "score": 73.1
@@ -527,7 +527,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 189,
+      "latency_ms": 191,
       "ru_ratio": 0.0,
       "is_russian": true,
       "score": 72.4
@@ -544,7 +544,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 159,
+      "latency_ms": 164,
       "ru_ratio": 0.75,
       "is_russian": true,
       "score": 72.4
@@ -561,7 +561,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 178,
+      "latency_ms": 206,
       "ru_ratio": 0.6,
       "is_russian": true,
       "score": 71.5
@@ -578,7 +578,7 @@
       "sampled": 0,
       "working_streams": 0,
       "availability": null,
-      "latency_ms": 202,
+      "latency_ms": 207,
       "ru_ratio": 0.375,
       "is_russian": true,
       "score": 67.5
