@@ -1,5 +1,5 @@
 # 🏆 Рейтинг рабочих IPTV-листов
-_Обновлено: 2026-08-05 08:35:31 UTC_
+_Обновлено: 2026-08-06 08:35:44 UTC_
 
 ## 🇷🇺 Топ русскоязычных листов
 | # | Название | Регион | Каналов | Рус.% | Рейтинг | Плейлист | EPG |
@@ -17,14 +17,14 @@ _Обновлено: 2026-08-05 08:35:31 UTC_
 ## 🌍 Полный рейтинг (25 источников)
 | # | Название | Регион | Каналов | Рус.% | Рейтинг | Плейлист | EPG |
 |---|----------|--------|--------:|------:|--------:|----------|-----|
-| 1 | iptv-org · Язык: Русский | RU | 605 | 33 | 87 | [m3u](https://iptv-org.github.io/iptv/languages/rus.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
-| 2 | iptv-org · Все каналы (мир) | Мир | 13535 | 2 | 87 | [m3u](https://iptv-org.github.io/iptv/index.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
-| 3 | iptv-org · Категория: Новости | Мир | 1007 | 2 | 87 | [m3u](https://iptv-org.github.io/iptv/categories/news.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
-| 4 | iptv-org · Категория: Кино | Мир | 763 | 3 | 87 | [m3u](https://iptv-org.github.io/iptv/categories/movies.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
-| 5 | iptv-org · Категория: Музыка | Мир | 779 | 2 | 87 | [m3u](https://iptv-org.github.io/iptv/categories/music.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
-| 6 | iptv-org · США | US | 1565 | 0 | 87 | [m3u](https://iptv-org.github.io/iptv/countries/us.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
-| 7 | Free-TV/IPTV · Мир (HD) | Мир | 1930 | 5 | 87 | [m3u](https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8) | [epg](https://iptvx.one/epg/epg.xml.gz) |
-| 8 | iptv-org src · США (raw) | US | 1127 | 0 | 87 | [m3u](https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
+| 1 | iptv-org · Все каналы (мир) | Мир | 13536 | 2 | 87 | [m3u](https://iptv-org.github.io/iptv/index.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
+| 2 | iptv-org · Язык: Русский | RU | 605 | 33 | 87 | [m3u](https://iptv-org.github.io/iptv/languages/rus.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
+| 3 | iptv-org · Категория: Музыка | Мир | 779 | 2 | 87 | [m3u](https://iptv-org.github.io/iptv/categories/music.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
+| 4 | iptv-org · Категория: Новости | Мир | 1007 | 2 | 87 | [m3u](https://iptv-org.github.io/iptv/categories/news.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
+| 5 | iptv-org · Категория: Кино | Мир | 762 | 3 | 87 | [m3u](https://iptv-org.github.io/iptv/categories/movies.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
+| 6 | iptv-org · США | US | 1566 | 0 | 87 | [m3u](https://iptv-org.github.io/iptv/countries/us.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
+| 7 | iptv-org src · США (raw) | US | 1128 | 0 | 87 | [m3u](https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
+| 8 | Free-TV/IPTV · Мир (HD) | Мир | 1930 | 5 | 87 | [m3u](https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8) | [epg](https://iptvx.one/epg/epg.xml.gz) |
 | 9 | iptv-org src · Россия (raw) | RU | 513 | 18 | 87 | [m3u](https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ru.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
 | 10 | iptv-org · Категория: Спорт | Мир | 501 | 2 | 87 | [m3u](https://iptv-org.github.io/iptv/categories/sports.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
 | 11 | iptv-org · Россия | RU | 475 | 38 | 86 | [m3u](https://iptv-org.github.io/iptv/countries/ru.m3u) | [epg](https://iptvx.one/epg/epg.xml.gz) |
